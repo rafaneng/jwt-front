@@ -3,8 +3,7 @@ const senha = document.querySelector('#password')
 const submit = document.querySelector('#submit')
 
 submit.addEventListener('click', (e) => {
-    e.preventDefault()
-
+    
     let usuario = {}
     usuario.login = login.value;
     usuario.senha = senha.value;
