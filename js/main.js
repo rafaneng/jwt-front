@@ -1,13 +1,13 @@
-const email = document.querySelector('#email')
-const password = document.querySelector('#password')
+const login = document.querySelector('#email')
+const senha = document.querySelector('#password')
 const submit = document.querySelector('#submit')
 
 submit.addEventListener('click', (e) => {
     e.preventDefault()
 
     let usuario = {}
-    usuario.login = email;
-    usuario.senha = password;
+    usuario.login = login.value;
+    usuario.senha = senha.value;
 
     fetch('https://jwt-rafaneng.herokuapp.com/api/usuarios', {
         method: "POST",
